@@ -1,0 +1,245 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display:block;
+    clear:both;
+}
+
+.header {
+    clear: both;
+    height:100vh;
+    width:100%;
+    background-color:#E30613;
+}
+.headimage {
+}
+
+.main {
+    padding-right:100px;
+    padding-left:100px;
+    margin-bottom:0px;
+    padding-bottom:0px;
+}
+
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+
+.icon-scroll {
+  width: 40px;
+  height: 70px;
+  margin-left: -20px;
+  top: 50%;
+  margin-top: -100px;
+  box-shadow: inset 0 0 0 1px #fff;
+  border-radius: 25px;
+}
+
+.icon-scroll:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+
+@keyframes scroll {
+  0% { opacity: 1;}
+  100% { opacity: 0;
+    transform: translateY(46px);
+}
+}
+
+.shadowbox {
+  border-radius: 0px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.footer {
+    clear: both;
+    width:100%;
+    background-color: #E30613;
+    margin:0px;
+    padding:0px;
+}
+
+.imgfoot {
+    padding-top:20px;
+    vertical-align: auto;
+}
+
+.backg {
+    padding-top:50px;
+    background-image: url("../images/300ppi.png");
+    background-color: #aa8765;
+    background-size:cover;
+    background-position: center center;
+    background-repeat: repeat-x;
+    height:100%;
+    width:100%;
+}
+
+p {
+    font-family: "Lato";
+    font-size: 1.2em;
+    font-weight: 600;
+}
+/* .frameblock1 {
+  position:relative
+}
+.firstcard {
+position:absolute;
+left:0;
+}
+
+.frameblock1 p {
+  display:inline-block;
+} */
+
+.frameblock1 .cardbox {
+    background-image: url("../images/card1_all.png");
+    height:600px;
+    max-width: 600px;
+    width:100%;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    float:left;
+    margin:0;
+    padding:0;
+}
+
+/* 
+.one {
+  top: 150px;
+  margin-top: 40rem;
+  left: 8%;
+  @include breakpoint(xs) {
+    display: block;
+    top: auto;
+    left: auto;
+    margin: 0 auto;
+  }
+}
+
+.oneback {
+    top: 1000px;
+    margin-top: -10rem;
+  }
+ */
+
+
+.frameblock1 p, .frameblock3 p {
+    padding-top:50px;
+    padding-right:50px;
+    padding-bottom:50px;
+    padding-right:50px;
+    text-align:justify;
+}
+
+/* .firstcard {
+transform:rotate();
+} */
+
+.frameblock2 .cardbox {
+    background-image: url("../images/card2_all.png");
+    height:600px;
+    max-width: 600px;
+    width:100%;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    float:right;
+    margin:0;
+    padding:0;
+}
+
+.frameblock2 p, .frameblock4 p {
+    padding-top:50px;
+    padding-left:50px;
+    padding-bottom:50px;
+    padding-right:50px;
+    text-align:justify;
+}
+
+.frameblock3 .cardbox {
+    background-image: url("../images/card3_all.png");
+    height:600px;
+    max-width: 600px;
+    width:100%;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    float:left;
+    margin:0;
+    padding:0;
+}
+
+
+.frameblock4 .cardbox {
+    background-image: url("../images/card4_all.png");
+    height:600px;
+    max-width: 600px;
+    width:100%;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    float:right;
+    margin-top:62px;
+}
+
+
+
+
+/*  
+.parallax {
+    position: absolute;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -ms-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    @include breakpoint(xs) {
+      position: relative;
+    }
+  } */
+
+/*
+  .back {
+    
+    @include breakpoint(xs) {
+      display: none !important;
+    }
+  }
+
+  
+.one {
+    top: 150px;
+    margin-top: -20rem;
+    left: 8%;
+    @include breakpoint(xs) {
+      display: block;
+      top: auto;
+      left: auto;
+      margin: 0 auto;
+    }
+  }
+  
+  .one.back {
+    top: 170px;
+    margin-top: -20rem;
+    left: 5%;
+  } */
